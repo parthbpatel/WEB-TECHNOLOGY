@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<fieldset>
+		<legend>REGISTRATION FORM</legend>
+		<form name="form" action="#" method="POST" autocomplete="off">
+	
+	<table align="center" cellpadding = "10">
+
+		<tr>
+			<td><label for="fNAME">FIRSTNAME:</label></td>
+			<td><input type="text" name="fNAME" id="fNAME"></input>
+		</tr>	
+		<tr>
+		<td><label for="lNAME">LASTNAME:</label></td>
+		<td> <input type="text" name="lNAME" id="lNAME"></input></td>
+		</tr>
+
+			<tr>
+
+		<td><label for="address">ADDRESS:</label></td>
+		<td><textarea col="4" row="4" id="address"></textarea></td>
+		</tr>
+<tr>
+		<td><label for="gender">GENDER:</label></td>
+		<td><input type="radio" name="gender" value="MALE" id="gender" checked>MALE</input> <input type="radio" name="gender" value="FEMALE" id="gender">FEMALE</input>
+</td>
+	</tr>
+	<tr>
+		<td><label for="class">CLASS:</label></td>
+		<td><input type="radio" name="class" value="A" id="class">A</input>
+		<input type="radio" name="class" value="B" id="class">B</input>
+	</td>
+</tr>
+<tr>
+		<td><label for="bdate">BIRTHDATE:</label></td>
+		<td><input type="date" name="bdate" id="bdate" min="1995-01-01" max="1999-12-31"></input></td>
+		</tr>
+		<tr>
+
+		<td><label for="pFile">PROFILE-PIC:</label></td>
+		<td><input type="file" name="pFile" id="pFile" accept=".jpg"></td>
+	</tr>
+	<tr>
+		<td><label for="email">EMAIL-ID:</label></td>
+		<td><input type="text" name="eid" id="email" pattern=".+@.+..+" required></input></td>
+	</tr>
+	<tr>
+		<td><label for="cNo">CONTACT NO:</label></td>
+		<td><input type="telephone" name="contact" id="cNo" maxlength="10" pattern="[0-9]$"></input></td>
+	</tr>
+		<tr>
+			<td><label for="hby">HOBBY:</label></td>
+			<td><input type="CHECKBOX" name="hobby" id="hby">TRAVELLING</input> <input type="CHECKBOX" name="hobby" id="hby">READING</input> <input type="CHECKBOX" name="hobby" id="hby">DRIVING</input></td>
+		</tr>
+		<tr>
+
+		<td><label for="sub">SUBJECT:</label></td>
+		<td><select id="sub"><option>ALL SUBJECT</option><option>WEB TECHNOLOGY</option><option>ADANCE JAVA</option><option>SOFTWARE ENGINEERING</option></select></td>
+	</tr>
+	<tr>
+		<td><label for="psw">PASSWORD:</label></td>
+		<td><input type="password" name="password" id="psw"></input></td>
+	</tr>
+		<tr>
+			<td><label for="rFile">UPLOAD YOUR <br/>RESUME:</label></td>
+			<td><input type="file" name="file" id="rFile" accept=".pdf"></td>
+		</tr>
+		<tr>
+
+		<td colspan="2" align="center"><button type="submit" id="sBtn">SUBMIT</button>
+		<button type="reset" id="rBtn">RESET</button></td>
+		</tr>
+
+
+</table>
+</form>
+</fieldset>
+</body>
+</html>
